@@ -1,0 +1,94 @@
+.navBar {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    min-height: 75px;
+    z-index: 50;
+    font-size: calc(10px + 2vmin);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.logo {
+    position: relative;
+    font-weight: 700;
+    color: rgba(150, 233, 95, 0.548);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    right: 38%;
+}
+
+.name {
+    position: absolute;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgba(150, 233, 95, 0.548);
+    letter-spacing: 2px;
+}
+
+.menu-bars {
+  position: relative;
+  left: 35%;
+  bottom: 60%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: none;
+  color: rgba(150, 233, 95, 0.548);;
+}
+
+.menu-button-active {
+    color: rgba(150, 233, 95, 0.548);
+}
+
+.menu-button-hide {
+    color: rgba(255,255,255, 0);
+}
+
+.nav-menu {
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transition: 850ms;
+}
+
+.nav-menu.active {
+    left: 75%;
+    transition: 350ms;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 25%;
+    z-index: 100;
+}
+
+.nav-menu-items {
+    width: 100%;
+    padding-top: 15%;
+}
+
+.navbar-toggle {
+    background-color: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu-items :any-link {
+    font-size: 2em;
+    padding-bottom: 15%;
+    text-decoration: none;
+    color: blanchedalmond;  
+}
+
+li {
+    list-style-type:none;
+    margin-bottom: 5%;
+}
