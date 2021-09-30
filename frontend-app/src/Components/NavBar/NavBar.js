@@ -15,11 +15,12 @@ const NavBar = props => {
         setHide(!hide);
     }
     
+    // file://home/angelo/github/architect-webpage/architect-webpage/frontend-app/src/Components/NavBar/logo.png
 
     return (
         <>
         <div className="navBar">
-            <Link to="/" className="logo"><img alt="Logo" src="file://home/angelo/github/architect-webpage/architect-webpage/frontend-app/src/Components/NavBar/logo.png" /></Link>        
+            <Link to="/" className="logo"><img alt="Logo" src="" /></Link>        
             <Link to="/" className="name">Fl.ando</Link>
             <Link to="#" className="menu-bars">
                 <FaBars className={hide ? 'menu-button-active' : 'menu-button-hide'} onClick={openNav} sidebar={sidebar} />
