@@ -15,7 +15,7 @@ const NavBar = props => {
         setHide(!hide);
     }
     
-    // file://home/angelo/github/architect-webpage/architect-webpage/frontend-app/src/Components/NavBar/logo.png
+
 
     return (
         <>
