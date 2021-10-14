@@ -1,0 +1,9 @@
+.PreePageContent {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(../../Components/images/pressBackGround.jpg);
+    background-size: 100%;
+    background-position-y: 51%;
+    z-index: -1;
+}

@@ -1,0 +1,9 @@
+.ProjectPageContent {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(../../Components/images/homeBackGround.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}

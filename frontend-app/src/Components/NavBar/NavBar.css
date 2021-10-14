@@ -4,7 +4,6 @@
     flex-direction: row;
     min-height: 75px;
     z-index: 50;
-    font-size: calc(10px + 2vmin);
     position: relative;
     align-items: center;
     justify-content: center;
@@ -14,7 +13,7 @@
 .logo {
     position: relative;
     font-weight: 700;
-    color: rgba(150, 233, 95, 0.548);
+    color: rgb(143, 0, 0);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -22,12 +21,22 @@
     right: 38%;
 }
 
+.logo img {
+    width: 30px;
+    height: 50px;
+}
+
 .name {
     position: absolute;
     text-decoration: none;
     font-weight: 700;
-    color: rgba(150, 233, 95, 0.548);
+    color: blanchedalmond;
     letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+.name:hover {
+    color: rgba(184, 135, 1);
 }
 
 .menu-bars {
@@ -38,11 +47,17 @@
   height: 30px;
   cursor: pointer;
   background: none;
-  color: rgba(150, 233, 95, 0.548);;
+  
 }
 
 .menu-button-active {
-    color: rgba(150, 233, 95, 0.548);
+    color: blanchedalmond;
+    transition: 0.6s;
+
+}
+
+.menu-button-active:hover {
+    color: rgba(184, 135, 1);
 }
 
 .menu-button-hide {
@@ -56,8 +71,9 @@
     justify-content: center;
     position: fixed;
     top: 0;
-    left: 100%;
+    left: 150%;
     transition: 85ms;
+    align-items: center;
 }
 
 .nav-menu.active {
@@ -66,11 +82,14 @@
     background-color: rgba(0, 0, 0, 0.5);
     width: 25%;
     z-index: 100;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-menu-items {
     width: 100%;
-    padding-top: 15%;
+    position: relative;
+    bottom: 10%;
 }
 
 .navbar-toggle {
@@ -83,12 +102,122 @@
 
 .nav-menu-items :any-link {
     font-size: 2em;
-    padding-bottom: 15%;
     text-decoration: none;
     color: blanchedalmond;  
+    position: relative;
+    transition: 0.6s;
 }
 
 li {
-    list-style-type:none;
+    list-style-type: none;
     margin-bottom: 5%;
 }
+
+.socialMediaArea {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.socialMediaIcon {
+    margin: 10px 20px 10px 10px;
+    cursor: pointer;
+}
+
+.nav-menu-items li a:hover {
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.socialMediaIcon img {
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 420px) {
+    .nav-menu.active {
+        width: 100%;
+        left: 0;
+    }
+
+    .navBar {
+        font-size: 1.3em;
+        width: 90%;
+        position: relative;
+        left: 6%;
+    }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 650px) {
+    .nav-menu.active {
+        left: 65%;
+        width: 35%;
+    }
+
+    .navBar {
+        font-size: 1.5em;
+        width: 90%;
+        position: relative;
+        left: 6%;
+    }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 820px) {
+    .nav-menu.active {
+        left: 70%;
+        width: 30%;
+    }
+
+    .navBar {
+        font-size: 1.7em;
+        width: 90%;
+        position: relative;
+        left: 6%;
+    }
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1010px) {
+    .nav-menu.active {
+        left: 75%;
+        transition: 350ms;
+        width: 25%;
+    }
+
+    .navBar {
+        width: 90%;
+        position: relative;
+        left: 6%;
+    }
+}
+
+@media only screen and (min-width: 1010px) and (max-width: 1250px) {
+    .nav-menu.active {
+        left: 80%;
+        width: 20%;
+    }
+
+    .navBar {
+        width: 90%;
+        position: relative;
+        left: 6%;
+    }
+}
+
+@media only screen and (min-width: 1251px) {
+    .nav-menu.active {
+        left: 75%;
+        width: 25%;
+    }
+
+    .navBar {
+        width: 90%;
+        position: relative;
+        left: 6%;
+    }
+}
+
+
+
+
+
+

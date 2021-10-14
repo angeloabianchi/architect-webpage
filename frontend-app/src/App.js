@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import Home from './Pages/Home/Home';
@@ -6,6 +6,7 @@ import About from './Pages/About/About';
 import Projects from './Pages/Projects/Projects';
 import Press from './Pages/Press/Press';
 import Contact from './Pages/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 import {
   BrowserRouter as Router,
   Route,
@@ -14,8 +15,14 @@ import {
 } from 'react-router-dom';
 
 
-
 const App = () => {
+
+  const [home, setHome] = useState(true);
+
+  const contentFunction = () => {
+    setHome(!home);
+  }
+
   return (
     <Router>
       <div className="App">
@@ -28,8 +35,8 @@ const App = () => {
         <div className="Content">
           <main>
             <Switch>
-              <Route path="/" exact><Home /></Route>
-              <Route path="/projects" exact><Projects /></Route>
+              <Route path="/" exact ><Home /></Route>
+              <Route path="/projects" exact onClick={contentFunction}><Projects /></Route>
               <Route path="/about" exact><About /></Route>
               <Route path="/press" exact><Press /></Route>
               <Route path="/contact" exact><Contact /></Route>
@@ -38,8 +45,16 @@ const App = () => {
             </Switch>
           </main>
         </div>
-        
+
+        <div className="footer">
+            <Footer />
+        </div>
+
+
+
+
       </div>
+        
     </Router>
 
   );

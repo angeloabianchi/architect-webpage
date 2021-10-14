@@ -7,22 +7,24 @@
 
 .App {
   text-align: center;
-  min-height: 120vh;
-  display: flex;
-  flex-direction: column;
-  background-image: url(./Components/images/backgroundTest2.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: rgba(0,0,0);
 }
 
 .App-header {
   color: white;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .Content {
-  padding-top: 6%;
-}
+  width: auto;
+  max-height: 100vh;
+} 
 
+.footer {
+  min-height: 13vh;
+  position: fixed;
+  width: 100%;
+  bottom: 0%;
+  z-index: 1;
+}

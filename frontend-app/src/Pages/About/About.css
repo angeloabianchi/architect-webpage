@@ -1,0 +1,10 @@
+.AboutPageContent {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(../../Components/images/aboutBackGround.jpg);
+    background-size: 100%;
+    background-position-y: 58%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}

@@ -1,9 +1,9 @@
 import React from "react";
+import './Press.css';
 
 const Press = () => {
     return (
-        <div className="">
-            <h1>Press Page</h1>
+        <div className="PreePageContent">
         </div>
     )
 }
