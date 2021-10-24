@@ -11,7 +11,7 @@
     background-image: url(../../Components/images/backgroundTest2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position-y: 36%;
+
 }
 
 .projects {
@@ -37,7 +37,10 @@
 
 
 @media only screen and (max-width: 420px) {
-
+    .home {
+        background-size: 150%;
+    }
+    
 }
 
 @media only screen and (min-width: 421px) and (max-width: 650px) {

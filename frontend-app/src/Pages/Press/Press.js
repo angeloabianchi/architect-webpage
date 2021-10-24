@@ -3,7 +3,7 @@ import './Press.css';
 
 const Press = () => {
     return (
-        <div className="PreePageContent">
+        <div className="PressPageContent" id="press">
         </div>
     )
 }

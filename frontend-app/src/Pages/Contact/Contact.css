@@ -5,3 +5,39 @@
     background-size: 100%;
     z-index: -1;
 }
+
+@media only screen and (max-width: 420px) {
+    .ContactPageContent {
+        background-size: 180%;
+        background-position-x: center;
+    }
+    
+}
+
+@media only screen and (min-width: 421px) and (max-width: 650px) {
+
+}
+
+@media only screen and (min-width: 651px) and (max-width: 820px) {
+
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1010px) {
+
+}
+
+@media only screen and (min-width: 1010px) and (max-width: 1250px) {
+    .nav-menu.active {
+        left: 80%;
+        width: 20%;
+    }
+
+}
+
+@media only screen and (min-width: 1251px) {
+    .nav-menu.active {
+        left: 75%;
+        width: 25%;
+    }
+
+}

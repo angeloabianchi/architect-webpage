@@ -35,7 +35,7 @@ const App = () => {
         <div className="Content">
           <main>
             <Switch>
-              <Route path="/" exact ><Home /></Route>
+              <Route path="/" exact ><Home /><Projects /><About /><Press /><Contact /></Route>
               <Route path="/projects" exact onClick={contentFunction}><Projects /></Route>
               <Route path="/about" exact><About /></Route>
               <Route path="/press" exact><Press /></Route>
