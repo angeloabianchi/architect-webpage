@@ -24,7 +24,7 @@ const NavBar = props => {
         <>
         <div className="navBar">
             <LinkScroll to="home" className="logo" smooth={true} duration={1000}><img alt="Logo" src="" /></LinkScroll>        
-            <Link to="home" className="name">FLANDO</Link>
+            <LinkScroll to="home" className="name" smooth={true} duration={1000}>FLANDO</LinkScroll>
             <Link to="#" className="menu-bars">
                 <FaBars className={hide ? 'menu-button-active' : 'menu-button-hide'} onClick={openNav} sidebar={sidebar} />
             </Link>
@@ -36,7 +36,7 @@ const NavBar = props => {
                 <li><LinkScroll to="home" onClick={openNav} smooth={true} duration={1000}>Home</LinkScroll></li>
                 <li><LinkScroll to="projects" onClick={openNav} smooth={true} duration={1000}>Projects</LinkScroll></li>
                 <li><LinkScroll to="about" onClick={openNav} smooth={true} duration={1000}>About</LinkScroll></li>
-                <li><LinkScroll to="press" onClick={openNav} smooth={true} duration={1000}>Press</LinkScroll></li>
+                <li><Link to="press" onClick={openNav} smooth={true} duration={1000}>Press</Link></li>
                 <li><LinkScroll to="contact" onClick={openNav} smooth={true} duration={1000}>Contact</LinkScroll></li>
             </ul>
             <div className="socialMediaArea">

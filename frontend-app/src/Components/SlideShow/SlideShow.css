@@ -1,0 +1,50 @@
+.MainContainer {
+    width: 80%;
+    position: absolute;
+    right: 10%;
+}
+
+.SlideShowContainer {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.slide {
+    min-width: 100%;
+    overflow: hidden;
+    transition: .3s ease all;
+    z-index: 10;
+    max-height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.textSlide {
+    background: rgba(0, 0, 0, 0.5);
+    width: 18%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 800px;
+}
+
+img {
+    width: 800px;
+    vertical-align: top;
+}
+
+@media only screen and (min-width: 421px) and (max-width: 650px) {
+    .textSlide {
+        position: relative;
+    }
+}

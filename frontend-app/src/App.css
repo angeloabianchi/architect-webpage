@@ -9,6 +9,10 @@
   text-align: center;
 }
 
+main {
+  overflow: hidden;
+}
+
 .App-header {
   color: white;
   position: fixed;
