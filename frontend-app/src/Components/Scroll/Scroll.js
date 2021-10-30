@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-scroll';
-
-
-
-
+import imageScroll from '../images/LogoFlavia0.png';
+import './Scroll.css';
 
 
 const Scroll = () => {
@@ -23,7 +21,7 @@ const Scroll = () => {
 
   return(
     <div className="scrollButton">
-      <Link className="" onClick={count} to={pages[number]} smooth={true} duration={1000}>Scroll Down</Link>
+      <Link className="scrollLink" onClick={count} to={pages[number]} smooth={true} duration={1000}><img className="imageScl" src={imageScroll} alt="scroll symbol" /></Link>
     </div>
   );
 }

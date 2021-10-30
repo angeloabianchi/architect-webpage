@@ -10,23 +10,26 @@ const SlideShow = () => {
         <div className="MainContainer">
             <div className="SlideShowContainer">
                 <div className="slide">
-                    <a href="www.google.com"><img src={projectOne} width="300px" alt="Papeis enrolados"/></a>
+                    <a href="www.google.com"><img className="projectImage" src={projectOne} width="300px" alt="Papeis enrolados"/></a>
                     <div className="textSlide"><p>Proyecto 1</p></div>
                 </div>
                 <div className="slide">
-                    <a href="www.google.com"><img src={projectTwo} width="300px" alt="Papeis enrolados"/></a>
+                    <a href="www.google.com"><img className="projectImage" src={projectTwo} width="300px" alt="Papeis enrolados"/></a>
                     <div className="textSlide"><p>Proyecto 2</p></div>
                 </div>
                 <div className="slide">
-                    <a href="www.google.com"><img src={projectThree} width="300px" alt="Papeis enrolados"/></a>
+                    <a href="www.google.com"><img className="projectImage" src={projectThree} width="300px" alt="Papeis enrolados"/></a>
                     <div className="textSlide"><p>Proyecto 3</p></div>
                 </div>
                 <div className="slide">
-                    <a href="www.google.com"><img src={projectFour} width="300px" alt="Papeis enrolados"/></a>
+                    <a href="www.google.com"><img className="projectImage" src={projectFour} width="300px" alt="Papeis enrolados"/></a>
                     <div className="textSlide"><p>Proyecto 4</p></div>
                 </div>
             </div>
-            <div>Arrows Control</div>
+            <div className="Controls">
+                <div className="button">Esq</div>
+                <div className="button">Dir</div>
+            </div>
         </div>
     );
 }

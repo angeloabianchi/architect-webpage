@@ -12,8 +12,11 @@
     cursor: pointer;
 }
 
-.scrollButton {
-
+.scroll {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .viewButton {
