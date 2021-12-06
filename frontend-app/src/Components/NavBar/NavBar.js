@@ -7,6 +7,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import facebookIcon from '../images/facebook.svg';
 import linkedinIcon from '../images/linkedin.svg';
 import instagramIcon from '../images/instagram.svg';
+import logoIcon from '../images/logoIcon.png';
 
 
 const NavBar = props => {
@@ -23,7 +24,7 @@ const NavBar = props => {
     return (
         <>
         <div className="navBar">
-            <ScrollLink to="home" className="logo" smooth={true} duration={1000}><img alt="Logo" src="" /></ScrollLink>        
+            <ScrollLink to="home" className="logo" smooth={true} duration={1000}><img alt="Logo" src={logoIcon} /></ScrollLink>        
             <ScrollLink to="home" className="name" smooth={true} duration={1000}>FLANDO</ScrollLink>
             <Link to="#" className="menu-bars">
                 <FaBars className={hide ? 'menu-button-active' : 'menu-button-hide'} onClick={openNav} sidebar={sidebar} />

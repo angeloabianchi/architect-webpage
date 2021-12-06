@@ -1,11 +1,12 @@
 import React, {useRef, useEffect} from "react";
-import projectOne from '../images/fotoPapeisEnrolados.jpg';
+import photoProjectOne from '../images/fotoPapeisEnrolados.jpg';
 import projectTwo from '../images/predioCortado.jpg';
 import projectThree from '../images/escadasBonitas.jpg';
 import projectFour from '../images/predioTorto.jpg';
 import leftArrow from '../images/left-arrow.png';
 import rightArrow from '../images/right-arrow.png';
-import './SlideShow.css'
+import './SlideShow.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -85,7 +86,7 @@ const SlideShow = () => {
         <div className="MainContainer">
             <div ref={slides} className="SlideShowContainer">
                 <div className="slide">
-                    <a href="www.google.com"><img className="projectImage" src={projectOne} width="300px" alt="Papeis enrolados"/></a>
+                    <Link to="/projectOne"><img className="projectImage" src={photoProjectOne} width="300px" alt="Papeis enrolados"/></Link>
                     <div className="textSlide"><p>Proyecto 1</p></div>
                 </div>
                 <div className="slide">
@@ -94,7 +95,7 @@ const SlideShow = () => {
                 </div>
                 <div className="slide">
                     <a href="www.google.com"><img className="projectImage" src={projectThree} width="300px" alt="Papeis enrolados"/></a>
-                    <div className="textSlide"><p>Proyecto 3</p></div>
+                    <div className="textSlide"><p>Proyecto 3</p></div>  
                 </div>
                 <div className="slide">
                     <a href="www.google.com"><img className="projectImage" src={projectFour} width="300px" alt="Papeis enrolados"/></a>
