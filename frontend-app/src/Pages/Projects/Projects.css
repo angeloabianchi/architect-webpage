@@ -1,3 +1,7 @@
+.project-page-container {
+    display: block;
+}
+
 .ProjectPageContent {
     width: 100%;
     min-height: 100vh;
@@ -10,6 +14,15 @@
     align-items: center;
     justify-content: center;
 }
+
+.project-footer {
+    position: absolute;
+    top: 192%;
+    z-index: 10;
+    right: 50%;
+}
+
+
 
 @media only screen and (max-width: 420px) {
     .ProjectPageContent {

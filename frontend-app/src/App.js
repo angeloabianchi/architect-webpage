@@ -6,7 +6,6 @@ import About from './Pages/About/About';
 import Projects from './Pages/Projects/Projects';
 import Press from './Pages/Press/Press';
 import Contact from './Pages/Contact/Contact';
-import Footer from './Components/Footer/Footer';
 import ProjectOne from './Pages/Projects/projectOne/projectOnePage';
 import {
   BrowserRouter as Router,
@@ -39,7 +38,7 @@ const App = () => {
         </div>
 
         <div className="footer">
-            <Footer />
+            
         </div>
 
       </div>

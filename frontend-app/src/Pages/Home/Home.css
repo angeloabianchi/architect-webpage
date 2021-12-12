@@ -1,17 +1,39 @@
-.HomePageContent {
+.HomePageContainer {
     display: block;
     align-items: center;
     justify-content: center;
 }
 
-.home {
+.HomePageContent {
     position: relative;
     z-index: 1;
     min-height: 100vh;
-    background-image: url(../../Components/images/backgroundTest2.jpg);
+    background-image: url(/static/media/backgroundTest2.6d8305a5.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+}
 
+.home {
+
+
+}
+
+.home-footer {
+    position: absolute;
+    bottom: 0%;
+    z-index: 10;
+    right: 50%;
+}
+
+.imageScl {
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.imageScl:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
 }
 
 .projects {

@@ -7,6 +7,7 @@ import leftArrow from '../images/left-arrow.png';
 import rightArrow from '../images/right-arrow.png';
 import './SlideShow.css';
 import { Link } from 'react-router-dom';
+// import refreshPage from '../../Pages/Projects/projectOne/projectOnePage';
 
 
 

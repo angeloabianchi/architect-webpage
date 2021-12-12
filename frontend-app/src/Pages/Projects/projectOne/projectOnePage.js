@@ -4,6 +4,10 @@ import photoPlanta from '../../../Components/images/plantaArquitectura.jpg';
 import './projectOnePage.css';
 
 
+/* function refreshPage(){ 
+    window.location.reload(); 
+} */
+
 
 const projectOnePage = () => {
 

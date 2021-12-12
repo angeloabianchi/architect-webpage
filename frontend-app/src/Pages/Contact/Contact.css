@@ -1,9 +1,20 @@
+.ontact-page-container {
+    display: block;
+}
+
 .ContactPageContent {
     width: 100%;
     min-height: 100vh;
     background-image: url(../../Components/images/contactBackGround.jpg);
     background-size: 100%;
     z-index: -1;
+}
+
+.contact-footer {
+    position: absolute;
+    top: 492%;
+    z-index: 10;
+    right: 50%;
 }
 
 @media only screen and (max-width: 420px) {

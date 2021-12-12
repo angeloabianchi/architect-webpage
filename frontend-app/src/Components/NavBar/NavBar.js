@@ -25,7 +25,6 @@ const NavBar = props => {
         <>
         <div className="navBar">
             <ScrollLink to="home" className="logo" smooth={true} duration={1000}><img alt="Logo" src={logoIcon} /></ScrollLink>        
-            <ScrollLink to="home" className="name" smooth={true} duration={1000}>FLANDO</ScrollLink>
             <Link to="#" className="menu-bars">
                 <FaBars className={hide ? 'menu-button-active' : 'menu-button-hide'} onClick={openNav} sidebar={sidebar} />
             </Link>
