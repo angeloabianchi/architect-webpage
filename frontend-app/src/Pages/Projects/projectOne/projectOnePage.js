@@ -4,15 +4,17 @@ import photoPlanta from '../../../Components/images/plantaArquitectura.jpg';
 import './projectOnePage.css';
 
 
-/* function refreshPage(){ 
-    window.location.reload(); 
-} */
-
 
 const projectOnePage = () => {
 
     // Renderizar na pageOne 
     window.scrollTo(0, 0);
+
+    function refreshPage(){ 
+        window.location.reload(); 
+    }
+    
+
 
     return(
 
