@@ -20,7 +20,7 @@
 
 .home-footer {
     position: absolute;
-    bottom: 0%;
+    bottom: 3%;
     z-index: 10;
     right: 50%;
 }
@@ -31,10 +31,6 @@
     position: relative;
 }
 
-.imageScl:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-}
 
 .projects {
     position: relative;

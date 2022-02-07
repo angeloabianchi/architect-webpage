@@ -25,6 +25,7 @@
 .logo img {
     width: 30px;
     height: 50px;
+    cursor: pointer;
 }
 
 .name {
@@ -52,7 +53,7 @@
 }
 
 .menu-button-active {
-    color: blanchedalmond;
+    color: rgb(0, 0, 0);
     transition: 0.6s;
 
 }
@@ -73,13 +74,13 @@
     position: fixed;
     top: 0;
     left: 150%;
-    transition: 85ms;
+    transition: 200ms;
     align-items: center;
 }
 
 .nav-menu.active {
     left: 75%;
-    transition: 350ms;
+    transition: 800ms;
     background-color: rgba(0, 0, 0, 0.5);
     width: 25%;
     z-index: 100;
@@ -109,10 +110,11 @@
 }
 
 li {
-    font-size: 2.3em;
+    font-size: 1.5em;
     list-style-type: none;
     margin-bottom: 5%;
     transition: 0.6s;
+    margin-top: 50px;
 }
 
 .socialMediaArea {
@@ -128,12 +130,21 @@ li {
 
 .nav-menu-items li a:hover {
     border-radius: 10px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgb(121, 121, 121);
+    transition: 0.6s;
 }
 
 .socialMediaIcon img {
     width: 40px;
     height: 40px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    transition: 1000ms;
+}
+
+.socialMediaIcon img:hover {
+    background-color: rgba(255,255,255);
+
 }
 
 @media only screen and (max-width: 420px) {

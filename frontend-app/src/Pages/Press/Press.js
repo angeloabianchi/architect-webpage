@@ -1,7 +1,7 @@
 import React from "react";
 import './Press.css';
 import { Link as ScrollLink } from 'react-scroll';
-import imageScroll from '../../Components/images/LogoFlavia0.png';
+import imageScroll from '../../Components/images/baixa.png';
 
 const Press = () => {
     return (

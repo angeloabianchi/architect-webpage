@@ -1,20 +1,42 @@
-.ontact-page-container {
+.contact-page-container {
     display: block;
 }
 
 .ContactPageContent {
     width: 100%;
-    min-height: 100vh;
-    background-image: url(../../Components/images/contactBackGround.jpg);
+    height: 40vh;
+    /* background-image: url(../../Components/images/contactBackGround.jpg); */
+    background-color: black;
     background-size: 100%;
-    z-index: -1;
+    display: flex;
+    flex-direction: row;
 }
 
 .contact-footer {
     position: absolute;
-    top: 492%;
+    top: 433%;
     z-index: 10;
     right: 50%;
+}
+
+.contactInfo {
+    margin-left: 10%;
+    margin-top: 2%;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+h1 {
+    margin-bottom: 10%;
+}
+
+a {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.scrollButtonContact {
+    background-color: white;
 }
 
 @media only screen and (max-width: 420px) {

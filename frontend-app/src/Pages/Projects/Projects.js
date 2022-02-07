@@ -2,7 +2,7 @@ import React from "react";
 import './Projects.css';
 import SlideShow from '../../Components/SlideShow/SlideShow';
 import { Link as ScrollLink } from 'react-scroll';
-import imageScroll from '../../Components/images/LogoFlavia0.png';
+import imageScroll from '../../Components/images/baixa.png';
 
 
 
