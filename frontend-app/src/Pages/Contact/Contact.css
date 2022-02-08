@@ -10,20 +10,24 @@
     background-size: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .contact-footer {
     position: absolute;
-    top: 433%;
+    top: 443%;
     z-index: 10;
-    right: 50%;
+    right: 49%;
+    
 }
 
 .contactInfo {
-    margin-left: 10%;
-    margin-top: 2%;
-    color: rgb(255, 255, 255);
     text-align: left;
+    width: 33%;
+    position: relative;
+    left: 10%;
+    top: 15%;
+    color: white;
 }
 
 h1 {
@@ -37,6 +41,27 @@ a {
 
 .scrollButtonContact {
     background-color: white;
+}
+
+.contactRights {
+    color: white;
+    width: 34%;
+    position: relative;
+    top: 65%;
+    font-size: xx-small;
+}
+
+.contactLogo {
+    background-color: black;
+    width: 33%;
+    position: relative;
+    top: 15%;
+    left: 12%;
+}
+
+.contactLogo img {
+    width: auto;
+    height: 75%;
 }
 
 @media only screen and (max-width: 420px) {

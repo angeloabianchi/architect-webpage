@@ -8,14 +8,14 @@
     position: relative;
     z-index: 1;
     min-height: 100vh;
-    background-image: url(/static/media/backgroundTest2.6d8305a5.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 .home {
 
+}
 
+.video {
+    width: 100%;
 }
 
 .home-footer {
