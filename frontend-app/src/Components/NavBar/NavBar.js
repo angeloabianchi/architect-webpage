@@ -7,7 +7,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import facebookIcon from '../images/facebook.svg';
 import linkedinIcon from '../images/linkedin.svg';
 import instagramIcon from '../images/instagram.svg';
-import logoIcon from '../images/logoIcon.png';
+import logoIcon from '../images/logoIconFooter.png';
 
 
 const NavBar = props => {
