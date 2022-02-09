@@ -1,5 +1,6 @@
 .about-page-container {
     display: block;
+    max-height: 100vh;
 }
 
 .AboutPageContent {
@@ -68,7 +69,7 @@
 
 .about-footer {
     position: absolute;
-    top: 305%;
+    top: 290%;
     z-index: 10;
     right: 50%;
 }

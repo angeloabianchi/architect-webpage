@@ -4,17 +4,14 @@
 
 .PressPageContent {
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     position: relative;
-    background-image: url(../../Components/images/pressBackGround.jpg);
-    background-size: 100%;
-
     z-index: -1;
 }
 
 .press-footer {
     position: absolute;
-    top: 420%;
+    top: 390%;
     z-index: 10;
     right: 50%;
 }
