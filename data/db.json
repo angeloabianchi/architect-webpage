@@ -1,9 +1,9 @@
 {
-  "posts": [
+  "projects": [
     {
       "id": 1,
       "title": "json-server",
-      "author": "typicode"
+      "imgUrl": "alguna url"
     }
   ],
   "comments": [
@@ -16,29 +16,6 @@
       "id": 2,
       "body": "Another Comment",
       "postId": ""
-    },
-    {
-      "id": "5",
-      "body": "Another Comment",
-      "postId": "1"
-    },
-    {
-      "id": "gIEAQmL",
-      "body": "Another Comment",
-      "postId": "1"
-    },
-    {
-      "id": "dc5eU6i",
-      "body": "Another Comment",
-      "postId": "1"
-    },
-    {
-      "body": "Another Comment",
-      "postId": "1",
-      "id": "N1ZftnM"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
