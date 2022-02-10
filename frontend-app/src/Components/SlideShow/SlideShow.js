@@ -1,8 +1,4 @@
 import React, {useRef, useEffect} from "react";
-import photoProjectOne from '../images/fotoPapeisEnrolados.jpg';
-import projectTwo from '../images/predioCortado.jpg';
-import projectThree from '../images/escadasBonitas.jpg';
-import projectFour from '../images/predioTorto.jpg';
 import leftArrow from '../images/left-arrow.png';
 import rightArrow from '../images/right-arrow.png';
 import './SlideShow.css';
@@ -10,8 +6,6 @@ import { Link } from 'react-router-dom';
 
 
 const SlideShow = ({projects}) => {
-
-    console.log(projects[0].id);
 
     const slides = useRef(null);
     const intervaloSlides = useRef(null);
@@ -87,7 +81,10 @@ const SlideShow = ({projects}) => {
                 {projects.map((project) => (
                     <div className="slide">
                         <Link to={"/project/" + project.id}><img className="projectImage" src={project.imgUrl} width="300px" alt="Papeis enrolados"/></Link>
-                        <div className="textSlide"><p>{project.title}</p></div>
+                        <div className="textSlide">
+                            <p>{project.title}</p>
+                            <p>{projects[0].images.length}</p>
+                            </div>
                     </div>
                 ))}
             </div>

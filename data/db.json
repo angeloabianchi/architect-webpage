@@ -3,22 +3,48 @@
     {
       "id": 1,
       "title": "Project One",
-      "imgUrl": "https://images.unsplash.com/photo-1644447327420-c618c033e4e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60"
+      "description": "This is a very nice description about a jungle house in the middle of the city of Barcelona. This project is very real and you can do it as well!! Don't lose this opportunity otherwise you'll be losing such a nice thing. Now I have to continue writing because I need more letters on the text to show flavia how would it be using a big text. Ok, I'm a little tired of this text. Let's go home. Ups, i'm home. ok... see you later. good bye",
+      "imgUrl": "https://images.unsplash.com/photo-1644241687199-d9a920cf888a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=964&q=80",
+      "client": "johnson Advocacia",
+      "location": "Barcelona",
+      "category": "Reforma",
+      "photography": "André Kioto",
+      "art": "Wood",
+      "images": [
+        "https://images.unsplash.com/photo-1644241687199-d9a920cf888a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=964&q=80",
+        "https://images.unsplash.com/photo-1644366667172-d8aab562c234?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8cm5TS0RId3dZVWt8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60",
+        ""
+      ]
     },
     {
       "id": 2,
       "title": "Project Two",
-      "imgUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+      "imgUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "client": "johnson Advocacia",
+      "location": "Barcelona",
+      "category": "Pre fabricated",
+      "photography": "Larissa Leal",
+      "art": "Blocks"
     },
     {
       "id": 3,
       "title": "Project Three",
-      "imgUrl": "https://images.unsplash.com/photo-1641319260675-6c15bebd7a10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+      "imgUrl": "https://images.unsplash.com/photo-1641319260675-6c15bebd7a10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "client": "johnson Advocacia",
+      "location": "Barcelona",
+      "category": "Reforma",
+      "photography": "Bianco Bianchi",
+      "art": "Wood"
     },
     {
       "id": 4,
       "title": "Project Four",
-      "imgUrl": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+      "imgUrl": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "client": "Busca Vida",
+      "location": "Italy",
+      "category": "Building",
+      "photography": "Gabriel Gonzalez",
+      "art": "Steel"
     }
   ],
   "comments": [
