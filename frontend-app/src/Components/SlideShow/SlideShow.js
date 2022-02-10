@@ -7,13 +7,11 @@ import leftArrow from '../images/left-arrow.png';
 import rightArrow from '../images/right-arrow.png';
 import './SlideShow.css';
 import { Link } from 'react-router-dom';
-// import refreshPage from '../../Pages/Projects/projectOne/projectOnePage';
 
 
+const SlideShow = ({projects}) => {
 
-
-
-const SlideShow = () => {
+    console.log(projects[0].id);
 
     const slides = useRef(null);
     const intervaloSlides = useRef(null);
@@ -86,22 +84,12 @@ const SlideShow = () => {
     return(
         <div className="MainContainer">
             <div ref={slides} className="SlideShowContainer">
-                <div className="slide">
-                    <Link to="/projectOne"><img className="projectImage" src={photoProjectOne} width="300px" alt="Papeis enrolados"/></Link>
-                    <div className="textSlide"><p>Proyecto 1</p></div>
-                </div>
-                <div className="slide">
-                    <a href="www.google.com"><img className="projectImage" src={projectTwo} width="300px" alt="Papeis enrolados"/></a>
-                    <div className="textSlide"><p>Proyecto 2</p></div>
-                </div>
-                <div className="slide">
-                    <a href="www.google.com"><img className="projectImage" src={projectThree} width="300px" alt="Papeis enrolados"/></a>
-                    <div className="textSlide"><p>Proyecto 3</p></div>  
-                </div>
-                <div className="slide">
-                    <a href="www.google.com"><img className="projectImage" src={projectFour} width="300px" alt="Papeis enrolados"/></a>
-                    <div className="textSlide"><p>Proyecto 4</p></div>
-                </div>
+                {projects.map((project) => (
+                    <div className="slide">
+                        <Link to={"/project/" + project.id}><img className="projectImage" src={project.imgUrl} width="300px" alt="Papeis enrolados"/></Link>
+                        <div className="textSlide"><p>{project.title}</p></div>
+                    </div>
+                ))}
             </div>
             <div className="Controls">
                 <div className="arrowButton left" onClick={previewSlide}><img src={leftArrow} alt="Left Arrow" /></div>

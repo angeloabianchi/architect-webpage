@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './Projects.css';
 import SlideShow from '../../Components/SlideShow/SlideShow';
 import { Link as ScrollLink } from 'react-scroll';
@@ -8,12 +8,27 @@ import imageScroll from '../../Components/images/baixa.png';
 
 const Projects = () => {
 
+    const [projects, setProjects] = useState(null);
+    
+    const url = "http://localhost:8000/projects";
+
+    useEffect(() => {
+        fetch(url)
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                setProjects(data);
+            });
+    }, []);
+
+
     return (
 
         <div className="project-page-container">  
 
             <div className="ProjectPageContent" id="projects">
-                <SlideShow />
+                {projects && <SlideShow projects={projects}/>}
             </div>
 
             <div className="project-footer">

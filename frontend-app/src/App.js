@@ -31,7 +31,7 @@ const App = () => {
             <Switch>
               
               <Route path="/" exact ><Home /><Projects /><About /><Press /><Contact /></Route>
-              <Route path="/projectOne"><ProjectOne /></Route>
+              <Route path="/project/:id"><ProjectOne /></Route>
               <Redirect to="/" />
             </Switch>
           </main>
