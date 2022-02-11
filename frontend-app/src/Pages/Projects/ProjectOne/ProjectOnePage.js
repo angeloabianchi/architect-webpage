@@ -7,14 +7,14 @@ const ProjectOnePage = (props) => {
     const {match} = props;
     const id = match.params.id;
 
-    // Renderizar na pageOne <-------------- está mal!! renderiza quando abro o menu e estou na pagina 2 ou 3 e sobe para a primera pagina.
-    window.scrollTo(0, 0);
+
 
     const [projects, setProjects] = useState('');
     
     const url = "http://localhost:8000/projects";
 
     useEffect(() => {
+        window.scrollTo(0, 0)
         fetch(url)
             .then(response => {
                 return response.json();
@@ -24,13 +24,8 @@ const ProjectOnePage = (props) => {
             });
     }, []);
 
-    console.log('id:' + id);
-    console.log(projects[id]);
-
     const project = projects && id && projects[id - 1];
     const photos = project && project.images;
-
-    console.log(photos);
 
     return(
 

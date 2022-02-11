@@ -16,7 +16,6 @@ import {
 
 
 const App = () => {
-  
 
   return(
     <Router>
@@ -45,7 +44,6 @@ const App = () => {
       </div>
         
     </Router>
-
   );
 }
 

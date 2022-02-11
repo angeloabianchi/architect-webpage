@@ -3,8 +3,34 @@ import './Home.css';
 import { Link as ScrollLink } from 'react-scroll';
 import imageScroll from '../../Components/images/baixa.png';
 import videoHome from '../../Components/images/videoHome.mp4';
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
 const Home = () => {
+
+     const location = useLocation();
+     const stateId = location.state;
+    console.log(stateId);
+
+    /* const scrollToSection = (id) => {                <----- trying to make the scroll down to id
+        var element = document.getElementById(stateId);
+        if(id) {
+            element.scrollIntoView({block: "end", behavior: "smooth"});
+        }
+    } 
+
+    scrollToSection(stateId); */
+
+    
+    
+    /* const goToViolation = (id) => {                  <---- this is the same but different
+        const violation = document.getElementById(id); 
+        window.scrollTo({
+          top:violation.offsetTop,
+          behavior:"smooth"
+      });
+    }; */
+
+
 
     return (
         <div className="HomePageContainer">
@@ -20,6 +46,8 @@ const Home = () => {
                     </div>
                 </div>
 
+                {//stateId && goToViolation(stateId)}
+                }
 
                 <div className="home-footer">
                     <div className="scrollButton">
