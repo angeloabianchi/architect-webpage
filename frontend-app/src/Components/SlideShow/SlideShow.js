@@ -83,7 +83,6 @@ const SlideShow = ({projects}) => {
                         <Link to={"/project/" + project.id}><img className="projectImage" src={project.imgUrl} width="300px" alt="Papeis enrolados"/></Link>
                         <div className="textSlide">
                             <p>{project.title}</p>
-                            <p>{projects[0].images.length}</p>
                             </div>
                     </div>
                 ))}

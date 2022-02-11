@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from "react";
-import photoProjectOne from '../../../Components/images/fotoPapeisEnrolados.jpg';
-import photoPlanta from '../../../Components/images/plantaArquitectura.jpg';
 import './ProjectOnePage.css';
 
 
@@ -39,7 +37,7 @@ const ProjectOnePage = (props) => {
         <div className="projectContainer">
             <div className="projectContent">
                 <div className="pageOne">
-                    {projects && id && <img className="photo" src={photos[0]} width="300px" alt="Papeis enrolados"/>}
+                    {projects && id && <img className="photo" src={project.imgUrl} width="300px" alt="Papeis enrolados"/>}
                 </div>
                 <div className="pageTwo">
                     <div className="leftSection">
@@ -60,16 +58,16 @@ const ProjectOnePage = (props) => {
                         </div>
                     </div>
                     <div className="rightSection">
-                        <img className="photoTwo" src={photos[2]} width="300px" alt="Papeis enrolados"/>
+                        <img className="photoTwo" src={photos[1]} width="300px" alt="Papeis enrolados"/>
                     </div>
                 </div>
                 <div className='pageThree'>
                     <div className='leftSection'>
-                        <img className="photoThree" src={photos[1]} width="300px" alt="Papeis enrolados"/>
+                        <img className="photoThree" src={photos[2]} width="300px" alt="Papeis enrolados"/>
                     </div>
                     <div className='rightSection'>
-                        <h2>Titulo</h2>
-                        <h3>Esaksj asjdpia cappcoa aowekpak aiosjdoajwe doiajdoawjeoiafak'aeahiudhauiw auhaouidja aowjoaijf gpogkef iafjpa aipdjapdo adpajfpaja wpofjapodkjoaw fapojfpaodma dpoajdpaindpiajdpa adijaod aijd aij ij nsad iaidjwanap ksjdia</h3>
+                        <h2>{project.title}</h2>
+                        <h3>{project.text}</h3>
                     </div>
                 </div>
                 

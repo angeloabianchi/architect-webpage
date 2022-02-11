@@ -5,6 +5,7 @@ import imageScroll from '../../Components/images/baixa.png';
 import videoHome from '../../Components/images/videoHome.mp4';
 
 const Home = () => {
+
     return (
         <div className="HomePageContainer">
                 <div className="HomePageContent" id="home">
