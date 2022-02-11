@@ -1,9 +1,72 @@
 {
-  "posts": [
+  "projects": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Project One",
+      "description": "This is a very nice description about a jungle house in the middle of the city of Barcelona. This project is very real and you can do it as well!! Don't lose this opportunity otherwise you'll be losing such a nice thing. Now I have to continue writing because I need more letters on the text to show flavia how would it be using a big text. Ok, I'm a little tired of this text. Let's go home. Ups, i'm home. ok... see you later. good bye",
+      "imgUrl": "https://images.unsplash.com/photo-1617357283170-d924176b7f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "text": "This text is just a text to inform or describe something to the user and if you want to add something feel free to send me a mensage. I appreciate that. Now, I don't know what to write so I'm gonna just put some random words over here. Thank you for all. Bla bla bla bla bla in english and lalala in portuguese. How do I write blablabla in spanish? I dont think that is a translation for this expression. Ok... I think that's a good size of text. See you later.",
+      "client": "johnson Advocacia",
+      "location": "Barcelona",
+      "category": "Reforma",
+      "photography": "André Kioto",
+      "art": "Wood",
+      "images": [
+        "https://images.unsplash.com/photo-1644241687199-d9a920cf888a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=964&q=80",
+        "http://3.bp.blogspot.com/-wVVffuFYrgY/Th3uzamA4tI/AAAAAAAAACs/6o0xgrWZxac/s1600/Casa+1%25C2%25BA+andar.jpg",
+        "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Project Two",
+      "description": "This is a very nice description about a jungle house in the middle of the city of Barcelona. This project is very real and you can do it as well!! Don't lose this opportunity otherwise you'll be losing such a nice thing. Now I have to continue writing because I need more letters on the text to show flavia how would it be using a big text. Ok, I'm a little tired of this text. Let's go home. Ups, i'm home. ok... see you later. good bye",
+      "imgUrl": "https://images.unsplash.com/photo-1507247174579-ae7086d18512?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=810&q=80",
+      "text": "This text is just a text to inform or describe something to the user and if you want to add something feel free to send me a mensage. I appreciate that. Now, I don't know what to write so I'm gonna just put some random words over here. Thank you for all. Bla bla bla bla bla in english and lalala in portuguese. How do I write blablabla in spanish? I dont think that is a translation for this expression. Ok... I think that's a good size of text. See you later.",
+      "client": "johnson Advocacia",
+      "location": "Barcelona",
+      "category": "Pre fabricated",
+      "photography": "Larissa Leal",
+      "art": "Blocks",
+      "images": [
+        "https://images.unsplash.com/photo-1644241687199-d9a920cf888a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=964&q=80",
+        "https://images.adsttc.com/adbr001cdn.archdaily.net/wp-content/uploads/2012/01/1326987622_1302635050_plan_02-512x450.jpg",
+        "https://images.unsplash.com/photo-1522050212171-61b01dd24579?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Project Three",
+      "description": "This is a very nice description about a jungle house in the middle of the city of Barcelona. This project is very real and you can do it as well!! Don't lose this opportunity otherwise you'll be losing such a nice thing. Now I have to continue writing because I need more letters on the text to show flavia how would it be using a big text. Ok, I'm a little tired of this text. Let's go home. Ups, i'm home. ok... see you later. good bye",
+      "imgUrl": "https://images.unsplash.com/photo-1457079585111-4f7fc5d8a98b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80",
+      "text": "This text is just a text to inform or describe something to the user and if you want to add something feel free to send me a mensage. I appreciate that. Now, I don't know what to write so I'm gonna just put some random words over here. Thank you for all. Bla bla bla bla bla in english and lalala in portuguese. How do I write blablabla in spanish? I dont think that is a translation for this expression. Ok... I think that's a good size of text. See you later.",
+      "client": "johnson Advocacia",
+      "location": "Barcelona",
+      "category": "Reforma",
+      "photography": "Bianco Bianchi",
+      "art": "Wood",
+      "images": [
+        "https://images.unsplash.com/photo-1644241687199-d9a920cf888a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=964&q=80",
+        "https://www.tuacasa.com.br/wp-content/uploads/2019/07/plantas-de-casas-pequenas-1280x720.jpg",
+        "https://images.unsplash.com/photo-1515121124382-33ae0bf9417c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Project Four",
+      "description": "This is a very nice description about a jungle house in the middle of the city of Barcelona. This project is very real and you can do it as well!! Don't lose this opportunity otherwise you'll be losing such a nice thing. Now I have to continue writing because I need more letters on the text to show flavia how would it be using a big text. Ok, I'm a little tired of this text. Let's go home. Ups, i'm home. ok... see you later. good bye",
+      "imgUrl": "https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+      "text": "This text is just a text to inform or describe something to the user and if you want to add something feel free to send me a mensage. I appreciate that. Now, I don't know what to write so I'm gonna just put some random words over here. Thank you for all. Bla bla bla bla bla in english and lalala in portuguese. How do I write blablabla in spanish? I dont think that is a translation for this expression. Ok... I think that's a good size of text. See you later.",
+      "client": "Busca Vida",
+      "location": "Italy",
+      "category": "Building",
+      "photography": "Gabriel Gonzalez",
+      "art": "Steel",
+      "images": [
+        "https://images.unsplash.com/photo-1644241687199-d9a920cf888a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=964&q=80",
+        "https://www.tuacasa.com.br/wp-content/uploads/2019/07/plantas-de-casas-pequenas-1280x720.jpg",
+        "https://images.unsplash.com/photo-1607189790510-178169be6c38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=586&q=80"
+      ]
     }
   ],
   "comments": [
@@ -16,29 +79,6 @@
       "id": 2,
       "body": "Another Comment",
       "postId": ""
-    },
-    {
-      "id": "5",
-      "body": "Another Comment",
-      "postId": "1"
-    },
-    {
-      "id": "gIEAQmL",
-      "body": "Another Comment",
-      "postId": "1"
-    },
-    {
-      "id": "dc5eU6i",
-      "body": "Another Comment",
-      "postId": "1"
-    },
-    {
-      "body": "Another Comment",
-      "postId": "1",
-      "id": "N1ZftnM"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
