@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from "react";
 import leftArrow from '../images/left-arrow.png';
 import rightArrow from '../images/right-arrow.png';
-import './SlideShow.css';
+//import './SlideShow.css';
 import { Link } from 'react-router-dom';
 
 
@@ -80,10 +80,10 @@ const SlideShow = ({projects}) => {
             <div ref={slides} className="SlideShowContainer">
                 {projects.map((project) => (
                     <div className="slide">
-                        <Link to={"/project/" + project.id}><img className="projectImage" src={project.imgUrl} width="300px" alt="Papeis enrolados"/></Link>
+                        <Link to={"/project/" + project.id}><img className="projectImage" src={project.imgUrl} width="300px" alt={project.title}/></Link>
                         <div className="textSlide">
                             <p>{project.title}</p>
-                            </div>
+                        </div>
                     </div>
                 ))}
             </div>
