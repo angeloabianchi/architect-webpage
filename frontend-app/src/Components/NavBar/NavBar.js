@@ -22,7 +22,8 @@ const NavBar = props => {
         setHide(!hide);
     }
 
-    const location = useLocation();     /* <--- finding the path to know if should render with Link or ScrollLink */
+    /* Finding the path to know if should render with Link or ScrollLink */
+    const location = useLocation();     
     const isMainPath = (location) => {
         if (location.pathname !== '/') {
             setMainPage(false);

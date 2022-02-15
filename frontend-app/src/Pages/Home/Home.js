@@ -9,7 +9,6 @@ const Home = () => {
 
     const location = useLocation();
     const stateId = location.state;
-    console.log(stateId);
 
     // scroll down to a div 'id' if exists a location.state (stateId)
     useEffect(() => {  

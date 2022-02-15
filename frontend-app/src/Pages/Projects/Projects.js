@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import './Projects.css';
-import SlideShow from '../../Components/SlideShow/SlideShow';
+//import SlideShow from '../../Components/SlideShow/SlideShow';
 import { Link as ScrollLink } from 'react-scroll';
 import imageScroll from '../../Components/images/baixa.png';
+import SlideProjects from "../../Components/SlideShow/SlideProjects";
 
 
 
@@ -28,7 +29,7 @@ const Projects = () => {
         <div className="project-page-container">  
 
             <div className="ProjectPageContent" id="projectsPage">
-                {projects && <SlideShow projects={projects}/>}
+                {projects && <SlideProjects projects={projects}/>}
             </div>
 
             <div className="project-footer">
