@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './Home.css';
 import { Link as ScrollLink } from 'react-scroll';
 import imageScroll from '../../Components/images/baixa.png';
@@ -7,30 +7,17 @@ import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
 const Home = () => {
 
-     const location = useLocation();
-     const stateId = location.state;
+    const location = useLocation();
+    const stateId = location.state;
     console.log(stateId);
 
-    /* const scrollToSection = (id) => {                <----- trying to make the scroll down to id
+    // scroll down to a div 'id' if exists a location.state (stateId)
+    useEffect(() => {  
         var element = document.getElementById(stateId);
-        if(id) {
+        if(element) {
             element.scrollIntoView({block: "end", behavior: "smooth"});
-        }
-    } 
-
-    scrollToSection(stateId); */
-
-    
-    
-    /* const goToViolation = (id) => {                  <---- this is the same but different
-        const violation = document.getElementById(id); 
-        window.scrollTo({
-          top:violation.offsetTop,
-          behavior:"smooth"
-      });
-    }; */
-
-
+        }  
+    }, [stateId]);
 
     return (
         <div className="HomePageContainer">
@@ -45,15 +32,13 @@ const Home = () => {
                         </video>
                     </div>
                 </div>
-
-                {//stateId && goToViolation(stateId)}
-                }
-
+            
                 <div className="home-footer">
                     <div className="scrollButton">
-                        <ScrollLink className="scrollLink" to="projects" smooth={true} duration={1000}><img className="imageScl" src={imageScroll} alt="scroll symbol" /></ScrollLink>
+                        <ScrollLink className="scrollLink" to="projectsPage" smooth={true} duration={1000}><img className="imageScl" src={imageScroll} alt="scroll symbol" /></ScrollLink>
                     </div>
                 </div>
+                
         </div>
 
     )

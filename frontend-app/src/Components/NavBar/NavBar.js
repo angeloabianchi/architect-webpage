@@ -22,7 +22,7 @@ const NavBar = props => {
         setHide(!hide);
     }
 
-    const location = useLocation();     /* <--- finding the path to know if should use the link or ScrollLink */
+    const location = useLocation();     /* <--- finding the path to know if should render with Link or ScrollLink */
     const isMainPath = (location) => {
         if (location.pathname !== '/') {
             setMainPage(false);
@@ -59,35 +59,35 @@ const NavBar = props => {
                     ?
                     <ScrollLink to="home" onClick={openNav} smooth={true} duration={1000}>Home</ScrollLink>
                     :
-                    <Link to='/' onClick={isMainPath && openNav}>Home</Link>
+                    <Link to={{pathname: '/', state: 'home'}} onClick={isMainPath && openNav}>Home</Link>
                 }</li>
                 <li>{
                     mainPage
                     ?
-                    <ScrollLink to="projects" onClick={openNav} smooth={true} duration={1000}>Projects</ScrollLink>
+                    <ScrollLink to="projectsPage" onClick={openNav} smooth={true} duration={1000}>Projects</ScrollLink>
                     :
-                    <Link to={{pathname: '/', state: 'projects'}} onClick={isMainPath && openNav} path="projects">Projects</Link>
+                    <Link to={{pathname: '/', state: 'projectsPage'}} onClick={isMainPath && openNav} path="projects">Projects</Link>
                 }</li>
                 <li>{
                     mainPage
                     ?
                     <ScrollLink to="about" onClick={openNav} smooth={true} duration={1000}>About</ScrollLink>
                     :
-                    <Link to="/" onClick={isMainPath && openNav}>About</Link>
+                    <Link to={{pathname: '/', state: 'about'}} onClick={isMainPath && openNav}>About</Link>
                 }</li>
                 <li>{
                     mainPage
                     ?
                     <ScrollLink to="press" onClick={openNav} smooth={true} duration={1000}>Press</ScrollLink>
                     :
-                    <Link to="/" onClick={isMainPath && openNav}>Press</Link>
+                    <Link to={{pathname: '/', state: 'press'}} onClick={isMainPath && openNav}>Press</Link>
                 }</li>
                 <li>{
                     mainPage
                     ?
                     <ScrollLink to="contact" onClick={openNav} smooth={true} duration={1000}>Contact</ScrollLink>
                     :
-                    <Link to="/" onClick={isMainPath && openNav}>Contact</Link>
+                    <Link to={{pathname: '/', state: 'contact'}} onClick={isMainPath && openNav}>Contact</Link>
                 }</li>
             </ul>
             <div className="socialMediaArea">

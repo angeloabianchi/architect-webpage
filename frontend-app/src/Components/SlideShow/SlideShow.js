@@ -80,7 +80,7 @@ const SlideShow = ({projects}) => {
             <div ref={slides} className="SlideShowContainer">
                 {projects.map((project) => (
                     <div className="slide">
-                        <Link to={"/project/" + project.id}><img className="projectImage" src={project.imgUrl} width="300px" alt="Papeis enrolados"/></Link>
+                        <Link to={"/project/" + project.id}><img className="projectImage" src={project.imgUrl} width="300px" alt={project.title}/></Link>
                         <div className="textSlide">
                             <p>{project.title}</p>
                             </div>

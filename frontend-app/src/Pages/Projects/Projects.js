@@ -27,7 +27,7 @@ const Projects = () => {
 
         <div className="project-page-container">  
 
-            <div className="ProjectPageContent" id="projects">
+            <div className="ProjectPageContent" id="projectsPage">
                 {projects && <SlideShow projects={projects}/>}
             </div>
 
