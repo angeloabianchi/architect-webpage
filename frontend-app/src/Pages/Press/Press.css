@@ -18,8 +18,16 @@
 
 @media only screen and (max-width: 420px) {
     .PressPageContent {
-        background-size: 150%;
-        background-position-x: center;
+        overflow: hidden;
+    }
+
+    .PressPageContent.video {
+        right: 100%;
+    }
+
+    .press-footer {
+        top: 448%;
+        right: 45%;
     }
     
 }

@@ -1,13 +1,11 @@
 import React, {useState, useEffect} from "react";
-import './ProjectOnePage.css';
+import './ProjectPage.css';
 
 
-const ProjectOnePage = (props) => {
+const ProjectPage = (props) => {
 
     const {match} = props;
     const id = match.params.id;
-
-
 
     const [projects, setProjects] = useState('');
     
@@ -71,4 +69,4 @@ const ProjectOnePage = (props) => {
     );
 }
 
-export default ProjectOnePage;
+export default ProjectPage;

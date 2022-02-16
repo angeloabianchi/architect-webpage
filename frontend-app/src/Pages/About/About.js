@@ -36,7 +36,7 @@ const About = () => {
                     <div className="item">
                         <div><img className="" src={exterior} alt="Exterior Icon" /></div>
                         <h1>Exterior</h1>
-                        <h4>aishe lajsuiqn sjdq sjdhiqwhqi sjdhiq sjqn skjqowoieq sjbahuq skdqi sjquhw sjdhiq  sjhaiqwndo ashiujw sjahhwdiuhqw jashdiuqhwd asudhq</h4>
+                        <h4>Sjdhiq sjqn skjqowoieq sjbahuq skdqi sjquhw sjdhiq  sjhaiqwndo ashiujw sjahhwdiuhqw jashdiuqhwd asudhq</h4>
                     </div>
                 </div>
 

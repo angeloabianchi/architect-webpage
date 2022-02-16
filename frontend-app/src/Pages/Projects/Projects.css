@@ -1,5 +1,6 @@
 .project-page-container {
     display: block;
+    height: 100vh;
 }
 
 .ProjectPageContent {
@@ -30,6 +31,9 @@
         background-position-x: center;
     }
     
+    .project-footer {
+        right: 45%;
+    }
 }
 
 @media only screen and (min-width: 421px) and (max-width: 650px) {

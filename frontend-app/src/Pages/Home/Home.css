@@ -11,8 +11,8 @@
 }
 
 .home {
-
-}
+    overflow: hidden;
+  }
 
 .video {
     width: 100%;
@@ -55,8 +55,14 @@
 
 
 @media only screen and (max-width: 420px) {
-    .home {
-        background-size: 150%;
+    .video {
+        width: max-content;
+        position: relative;
+        right: 100%;
+    }
+
+    .home-footer {
+        right: 45%;
     }
     
 }

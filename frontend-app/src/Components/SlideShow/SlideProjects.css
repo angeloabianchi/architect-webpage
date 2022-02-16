@@ -15,7 +15,6 @@
 
 .right-arrow {
     position: absolute;
-    top: 50%;
     right: -200px;
     font-size: 3rem;
     color: rgba(0, 0, 0);
@@ -24,15 +23,24 @@
     user-select: none;
 }
 
+.right-arrow:hover {
+    color: rgb(53, 53, 53);
+
+}
+
 .left-arrow {
     position: absolute;
-    top: 50%;
     left: -200px;
     font-size: 3rem;
     color: rgba(0, 0, 0);
     z-index: 10;
     cursor: pointer;
     user-select: none;
+}
+
+.left-arrow:hover {
+    color: rgb(53, 53, 53);
+
 }
 
 .slide {
@@ -62,4 +70,48 @@
     bottom: 3px;
     width: -moz-available;
     border-radius: 0 0 10px 10px;
+}
+
+
+
+@media only screen and (max-width: 420px) {
+    .projectImage {
+        width: 350px;
+        height: auto;
+    }
+
+    .left-arrow {
+        position: absolute;
+        left: -1%;
+        font-size: 2rem;
+        color: rgba(0, 0, 0);
+        z-index: 10;
+        width: 75px;
+        top: 37%;
+    }
+
+
+
+    .right-arrow {
+        position: absolute;
+        right: -1%;
+        font-size: 2rem;
+        color: rgba(0, 0, 0);
+        z-index: 10;
+        width: 75px;
+        top: 37%;
+    }
+
+    .slide.active {
+        position: relative;
+        bottom: 10%;
+    }
+
+    .textSlide {
+        background: rgba(2, 2, 2, 0.8);
+        bottom: -40%;
+        border-radius: 10px;
+        transition-duration: 1s;
+    }
+    
 }

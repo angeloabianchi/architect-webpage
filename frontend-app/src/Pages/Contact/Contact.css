@@ -16,8 +16,7 @@
 .contact-footer {
     position: absolute;
     top: 429%;
-    z-index: 10;
-    right: 49%;
+    right: 50%;
     
 }
 
@@ -66,10 +65,44 @@ a {
 
 @media only screen and (max-width: 420px) {
     .ContactPageContent {
-        background-size: 180%;
-        background-position-x: center;
+        overflow: hidden;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
     }
+
+    .contactInfo {
+        width: 65%;
+        margin-left: 10%;
+        top: 15%;
+    }
+
+    .contactInfo h1 {
+        margin-left: 15%;
+        margin-top: 5%;
+        margin-bottom: 18%;
+    }
+
+    .contactRights {
+        left: 20%;
+        top: 60%;
+        width: 60%;
+    }
+
+    .contactLogo {
+        top: 17%;
+        left: 30%;
+    }
+
+    .contactLogo img {
+        width: 175%;
+        height: auto;
+      }
     
+      .contact-footer {
+        top: 548%;
+        right: 45%;
+      }
 }
 
 @media only screen and (min-width: 421px) and (max-width: 650px) {

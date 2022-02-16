@@ -1,6 +1,7 @@
 .about-page-container {
     display: block;
     max-height: 100vh;
+    overflow: hidden;
 }
 
 .AboutPageContent {
@@ -74,12 +75,48 @@
     right: 50%;
 }
 
-@media only screen and (max-width: 420px) {
-    .AboutPageContent {
-        background-size: 150%;
-        background-position-x: center;
+@media only screen and (max-width: 420px) {         /* <--- need to fix the height of about page... the video is too small   */
+    .about-page-container {                         /*      and should use a higher size to fit all content.  */
+        min-height: 160vh;
     }
     
+    .video {
+        position: relative;
+        right: 100%;
+        width: 515%;
+
+    }
+
+    .aboutContent {
+        top: 10%;
+    }
+
+    .aboutContent h4 {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .aboutItems {
+        flex-direction: column;
+        top: 18%;
+        right: -5%;
+
+    }
+
+    .item {
+        margin-bottom: 30px;
+        width: 300px;
+        height: 275px;
+    }
+
+    .about-footer {
+        right: 45%;
+        top: 349%;
+    }
+
 }
 
 @media only screen and (min-width: 421px) and (max-width: 650px) {

@@ -31,6 +31,10 @@ main {
 
 
 @media only screen and (max-width: 420px) {
+  main {
+    overflow: visible;
+  }
+  
   .Content {
     display: flex;
     flex-direction: column;

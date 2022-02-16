@@ -20,11 +20,10 @@ const SlideProjects = ({projects}) => {
     const prevSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     }
-    
-    console.log(current);
 
     return (
         <section className="slider">
+
             <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
             <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
 
@@ -36,13 +35,10 @@ const SlideProjects = ({projects}) => {
                                 <Link to={"/project/" + slide.id}><img className="projectImage" src={slide.imgUrl} width="300px" alt={slide.title}/></Link>
                                 <div className="textSlide"><p>{slide.title}</p></div>
                             </div>
-                            
                         )}
-                        
                     </div>
                 )
             })}
-
         </section>
     );
 

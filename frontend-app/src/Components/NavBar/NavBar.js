@@ -16,6 +16,8 @@ const NavBar = props => {
     const [sidebar, setSidebar] = useState(false);
     const [hide, setHide] = useState(true);
     const [mainPage, setMainPage] = useState(true);
+    const [logoOn, setLogoOn] = useState(false);
+    const [logoActivate, setLogoActivate] = useState('hideLogo')
 
     const openNav = () => {
         setSidebar(!sidebar);
@@ -32,18 +34,37 @@ const NavBar = props => {
         }
     }
 
+    // finding the size of the user's screen and setting the logo to show or not
+    let screenWidth = window.screen.width;
+    const showLogo = () => {
+        if (screenWidth > 550) {
+            setLogoOn(true);
+        } else {
+            setLogoOn(false);
+        }
+    }
+
     // use the function to change the boolean to false if the path changes
     useEffect(() => {
         isMainPath(location);
-    }, [location]);
+        showLogo();             // <--- needs to know if the size of the screen is big enought for the logo
+        activateLogo()          // <--- it was created to know if the menu bar is activate or not.
+    }, [location, hide]);       // <--- when the hide status change, need to re use the activateLogo function to make the logo desapear
 
+    const activateLogo = () => {
+        if(hide) {
+            setLogoActivate('hideLogo');
+        } else {
+            setLogoActivate('showLogo');
+        } 
+    }
     
     return (
         <>
         <div className="navBar">
             {mainPage 
             ?
-            <ScrollLink to="home" className="logo" smooth={true} duration={1000}><img alt="Logo" src={logoIcon} /></ScrollLink>
+            <ScrollLink to="home" className={logoOn ? 'logo' : logoActivate} smooth={true} duration={1000}><img alt="Logo" src={logoIcon} /></ScrollLink>
             :
             <Link to='/' className="logo" onClick={isMainPath}><img alt="Logo" src={logoIcon} /></Link>
             }
@@ -54,7 +75,7 @@ const NavBar = props => {
 
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
             <ul className='nav-menu-items'>
-                <li className='navbar-toggle'><Link to="#" className='menu-bars' onClick={openNav}><AiOutlineClose /></Link></li>
+                <li className='navbar-toggle'><Link to="/" className='menu-bars' onClick={openNav}><AiOutlineClose /></Link></li>
                 <li>{
                     mainPage 
                     ?

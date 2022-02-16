@@ -6,7 +6,7 @@ import About from './Pages/About/About';
 import Projects from './Pages/Projects/Projects';
 import Press from './Pages/Press/Press';
 import Contact from './Pages/Contact/Contact';
-import ProjectOnePage from './Pages/Projects/ProjectOne/ProjectOnePage';
+import ProjectPage from './Pages/Projects/ProjectOne/ProjectPage';
 import {
   BrowserRouter as Router,
   Route,
@@ -31,7 +31,7 @@ const App = () => {
             <Switch>
               
               <Route path="/" exact ><Home /><Projects /><About /><Press /><Contact /></Route>
-              <Route path="/project/:id" render={props => <ProjectOnePage {...props}/>}/>
+              <Route path="/project/:id" render={props => <ProjectPage {...props}/>}/>
               <Redirect to="/" />
             </Switch>
           </main>
