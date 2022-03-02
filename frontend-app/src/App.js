@@ -33,6 +33,7 @@ const App = () => {
               <Route path="/" exact ><Home /><Projects /><About /><Press /><Contact /></Route>
               <Route path="/project/:id" render={props => <ProjectPage {...props}/>}/>
               <Redirect to="/" />
+              
             </Switch>
           </main>
         </div>
