@@ -1,7 +1,5 @@
 .HomePageContainer {
     display: block;
-    align-items: center;
-    justify-content: center;
 }
 
 .HomePageContent {
@@ -20,13 +18,13 @@
 
 .home-footer {
     position: absolute;
-    bottom: 3%;
+    bottom: 5%;
     z-index: 10;
     right: 50%;
 }
 
 .imageScl {
-    width: 40px;
+    width: 30px;
     cursor: pointer;
     position: relative;
 }

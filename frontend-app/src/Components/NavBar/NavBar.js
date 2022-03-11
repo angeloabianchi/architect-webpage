@@ -7,7 +7,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import facebookIcon from '../images/facebook.svg';
 import linkedinIcon from '../images/linkedin.svg';
 import instagramIcon from '../images/instagram.svg';
-import logoIcon from '../images/logoIconFooter.png';
+import logoIcon from '../images/logoIcon.png';
 import { useLocation } from 'react-router-dom';
 
 
@@ -61,12 +61,12 @@ const NavBar = props => {
     
     return (
         <>
-        <div className="navBar">
+        <div className={mainPage ? "navBar" : "navBar-absolute"}>
             {mainPage 
             ?
             <ScrollLink to="home" className={logoOn ? 'logo' : logoActivate} smooth={true} duration={1000}><img alt="Logo" src={logoIcon} /></ScrollLink>
             :
-            <Link to='/' className="logo" onClick={isMainPath}><img alt="Logo" src={logoIcon} /></Link>
+            <Link to={{pathname: '/', state: 'home'}} className="logo" onClick={isMainPath}><img alt="Logo" src={logoIcon} /></Link>
             }
             <Link to="#" className="menu-bars">
                 <FaBars className={hide ? 'menu-button-active' : 'menu-button-hide'} onClick={openNav} sidebar={sidebar} />
@@ -75,7 +75,7 @@ const NavBar = props => {
 
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
             <ul className='nav-menu-items'>
-                <li className='navbar-toggle'><Link to="/" className='menu-bars' onClick={openNav}><AiOutlineClose /></Link></li>
+                <li className='navbar-toggle'><div className='menu-bars' onClick={openNav}><AiOutlineClose /></div></li>
                 <li>{
                     mainPage 
                     ?

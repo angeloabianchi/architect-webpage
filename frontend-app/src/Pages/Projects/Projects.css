@@ -1,13 +1,15 @@
 .project-page-container {
     display: block;
     height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-color: white;
 }
 
 .ProjectPageContent {
     width: 100%;
     min-height: 100vh;
     position: relative;
-    background-image: url(../../Components/images/homeBackGround.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 1;
@@ -18,7 +20,7 @@
 
 .project-footer {
     position: absolute;
-    top: 190%;
+    top: 90%;
     z-index: 10;
     right: 50%;
 }

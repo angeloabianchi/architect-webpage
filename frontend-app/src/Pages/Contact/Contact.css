@@ -24,7 +24,7 @@
     text-align: left;
     width: 33%;
     position: relative;
-    left: 10%;
+    left: 5%;
     top: 15%;
     color: white;
 }
@@ -50,12 +50,31 @@ a {
     font-size: xx-small;
 }
 
+.contactRights-two {
+    color: white;
+    width: 34%;
+    position: relative;
+    top: 83%;
+    font-size: xx-small;
+}
+
 .contactLogo {
     background-color: black;
     width: 33%;
     position: relative;
     top: 15%;
     left: 12%;
+}
+
+.logo-contact {
+position: relative;
+font-weight: 700;
+color: rgb(143, 0, 0);
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 2px;
+transition: 0.6s;
+right: 23%;
 }
 
 .contactLogo img {

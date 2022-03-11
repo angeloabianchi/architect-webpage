@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Link } from 'react-router-dom';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft} from "react-icons/fa";
+import { AiOutlineRight, AiOutlineLeft} from "react-icons/ai";
 import './SlideProjects.css';
 
 const SlideProjects = ({projects}) => {
@@ -24,8 +24,8 @@ const SlideProjects = ({projects}) => {
     return (
         <section className="slider">
 
-            <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-            <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+            <AiOutlineLeft className="left-arrow" onClick={prevSlide} />
+            <AiOutlineRight className="right-arrow" onClick={nextSlide} />
 
             {projects.map((slide, index) => {
                 return (

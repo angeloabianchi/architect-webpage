@@ -1,45 +1,46 @@
 .slider {
     position: relative;
-    width: 1000px;
-    height: 100vh;
+    width: 40%;
+    height: 53vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .projectImage {
-    width: max-content;
-    height: 600px;
+    width: 85%;
     border-radius: 10px;
 }
 
 .right-arrow {
     position: absolute;
-    right: -200px;
+    right: -10%;
     font-size: 3rem;
     color: rgba(0, 0, 0);
     z-index: 10;
     cursor: pointer;
     user-select: none;
+    transition: 0.5s;
 }
 
 .right-arrow:hover {
-    color: rgb(53, 53, 53);
+    color: rgb(173, 173, 173);
 
 }
 
 .left-arrow {
     position: absolute;
-    left: -200px;
+    left: -10%;
     font-size: 3rem;
     color: rgba(0, 0, 0);
     z-index: 10;
     cursor: pointer;
     user-select: none;
+    transition: 0.5s;
 }
 
 .left-arrow:hover {
-    color: rgb(53, 53, 53);
+    color: rgb(173, 173, 173);
 
 }
 
@@ -62,14 +63,13 @@
 }
 
 .textSlide {
-    background: rgba(0, 0, 0, 0.5);
-    width: 18%;
-    color: white;
+    width: max-content;
+    color: black;
     text-align: center;
     position: absolute;
-    bottom: 3px;
-    width: -moz-available;
-    border-radius: 0 0 10px 10px;
+    right: 133%;
+    top: 10%;
+    font-size: 1.5rem;
 }
 
 
