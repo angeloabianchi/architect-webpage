@@ -2,16 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Project;
 use Illuminate\Http\Request;
+use App\Models\Project;
+
 
 class ProjectsController extends Controller
 {
     
-    public function findAll(Request $request)
+    public function findAll()
     {
-        $projects = $request->all();
-        return response()->json($projects);
+        $projects = Project::all();
+        return response()->json($projects, 200);
     }
 
 }

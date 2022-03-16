@@ -11,10 +11,10 @@ const Projects = () => {
 
     const [projects, setProjects] = useState(null);
     
-    const url = "http://localhost:8000/projects";
+    const url = "http://localhost:80/api/projects";
 
     useEffect(() => {
-        fetch(url)
+        fetch(url, {mode:'cors'})
             .then(response => {
                 return response.json();
             })
@@ -22,7 +22,6 @@ const Projects = () => {
                 setProjects(data);
             });
     }, []);
-
 
     return (
 
