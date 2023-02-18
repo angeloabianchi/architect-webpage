@@ -11,8 +11,9 @@ const Projects = () => {
 
     const [projects, setProjects] = useState(null);
     
-    const url = "http://localhost:80/api/projects";
-
+    //const url = "http://localhost:80/api/projects";
+    const url = "http://localhost:8000/projects";
+    
     useEffect(() => {
         fetch(url, {mode:'cors'})
             .then(response => {
