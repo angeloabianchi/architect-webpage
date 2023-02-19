@@ -10,7 +10,9 @@ const ProjectPage = (props) => {
 
     const [projects, setProjects] = useState('');
     
-    const url = "http://localhost:8000/projects";
+    //const url = "http://localhost:80/projects";
+    const url = "http://127.0.0.1:80/api/projects";
+
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -31,7 +33,7 @@ const ProjectPage = (props) => {
         <div className="projectContainer">
             <div className="projectContent">
                 <div className="pageOne">
-                    {projects && id && <img className="photo" src={project.imgUrl} width="300px" alt="Project 1"/>}
+                    {projects && id && <img className="photo" src={project.proj_img} width="300px" alt="Project 1"/>}
                 </div>
                 <div className="pageTwo">
                     <div className="leftSection">

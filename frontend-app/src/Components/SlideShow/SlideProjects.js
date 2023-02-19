@@ -32,7 +32,7 @@ const SlideProjects = ({projects}) => {
                     <div className={index === current ? 'slide active' : 'slide'} key={index}>
                         {index === current && (
                             <div className="slideBox">
-                                <Link to={"/project/" + slide.id}><img className="projectImage" src={slide.imgUrl} width="300px" alt={slide.title}/></Link>
+                                <Link to={"/project/" + slide.id}><img className="projectImage" src={slide.proj_img} width="300px" alt={slide.title}/></Link>
                                 <div className="textSlide"><p>{slide.title}</p></div>
                             </div>
                         )}

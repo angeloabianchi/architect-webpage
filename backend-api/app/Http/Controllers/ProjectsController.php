@@ -15,4 +15,9 @@ class ProjectsController extends Controller
         return response()->json($projects, 200);
     }
 
+    public function index(Request $req)
+    {
+        echo "Something else";
+    }
+
 }

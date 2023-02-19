@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get("projects/", "ProjectsController@findAll");
+Route::get('/projectsaa', "ProjectsController@index");

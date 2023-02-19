@@ -4,25 +4,72 @@ import './Projects.css';
 import { Link as ScrollLink } from 'react-scroll';
 import imageScroll from '../../Components/images/baixa.png';
 import SlideProjects from "../../Components/SlideShow/SlideProjects";
+import axios from 'axios';
 
 
 
 const Projects = () => {
 
-    const [projects, setProjects] = useState(null);
+    const [projects, setProjects] = useState([]);
     
-    //const url = "http://localhost:80/api/projects";
-    const url = "http://localhost:8000/projects";
+    const url = "http://127.0.0.1:80/api/projects";
+    //const url = "http://127.0.0.1:80/projects";
     
-    useEffect(() => {
-        fetch(url, {mode:'cors'})
-            .then(response => {
-                return response.json();
-            })
-            .then(data => {
-                setProjects(data);
-            });
-    }, []);
+    // useEffect(() => {
+    //     fetch(url, {mode:'cors'})
+    //         .then(response => {
+    //             return response.json();
+    //         })
+    //         .then(data => {
+    //             setProjects(data);
+    //         });
+    // }, []);
+
+    const fetchData = () => {
+        return fetch(url)
+              .then((response) => response.json())
+              .then((data) => setProjects(data));
+      }
+    
+      useEffect(() => {
+        fetchData();
+      },[])
+
+    // useEffect(() => {
+    //     axios.get(url)
+    //     .then(response=>{
+    //         setProjects(response.data);
+    //     })
+    // }, [])
+
+
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //       try {
+    //         const response = await axios.get(url, { withCredentials: true }, {
+    //           headers: {
+    //             'Access-Control-Allow-Origin': '*'
+    //           }
+    //         });
+    //         setProjects(response.data.projects);
+    //         console.log(response.data);
+    //       } catch (error) {
+    //         console.error(error);
+    //       }
+    //     };
+    //     fetchData();
+    //   }, [projects]);
+
+    // axios.get(url, { withCredentials: true })
+    // .then(response => {
+    //     setProjects(response.data);
+    // })
+    // .catch(error => {
+    //     console.log(error);
+    // });
+
+
+    console.log(projects);
 
     return (
 
