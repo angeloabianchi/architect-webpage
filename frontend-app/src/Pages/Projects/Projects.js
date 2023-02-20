@@ -69,8 +69,6 @@ const Projects = () => {
     // });
 
 
-    console.log(projects);
-
     return (
 
         <div className="project-page-container">  

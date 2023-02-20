@@ -21,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 #Route::get('/projects', [ProjectsController::class, 'findAll']);
 Route::resource('projects', 'Api\ProjectsController');
+Route::resource('projects/{id}', 'Api\ProjectsController');

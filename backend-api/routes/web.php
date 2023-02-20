@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get("projects/", "ProjectsController@findAll");
-Route::get('/projectsaa', "ProjectsController@index");
+#Route::get('/projectsaa', "ProjectsController@index");

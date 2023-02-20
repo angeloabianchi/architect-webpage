@@ -31,7 +31,7 @@ const App = () => {
             <Switch>
               
               <Route path="/" exact ><Home /><Projects /><About /><Press /><Contact /></Route>
-              <Route path="/project/:id" render={props => <ProjectPage {...props}/>}/>
+              <Route path="/projects/:id" render={props => <ProjectPage {...props}/>}/>
               <Redirect to="/" />
               
             </Switch>
