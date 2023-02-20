@@ -10,8 +10,6 @@ const ProjectPage = (props) => {
 
     const [projects, setProjects] = useState('');
     
-    //const url = "http://localhost:80/projects";
-
 
     useEffect(() => {
         const url = "http://127.0.0.1:80/api/projects/" + projId;
@@ -28,7 +26,6 @@ const ProjectPage = (props) => {
             });
     }, [projId]);
 
-    //const project = projects && projId && projects[projId - 1];
     // const photos = project && project.images;
 
     if (!projects) {
